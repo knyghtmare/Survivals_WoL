@@ -1,0 +1,4 @@
+changelog:
+
+v0.9.8
+--> Ported over survival scenario files from the IoM add-on
