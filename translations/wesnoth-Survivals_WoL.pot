@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2021-06-28 15:58 UTC\n"
+"POT-Creation-Date: 2021-06-28 18:07 UTC\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,26 @@ msgstr ""
 #. [multiplayer]: id=multiplayer_2p_Isle_of_Mists_WoL
 #: Survivals_WoL/scenarios/2p_Isle_of_Mists_WoL.cfg:10
 msgid "2p — Isle of Mists (WoL)"
+msgstr ""
+
+#. [multiplayer]: id=2p_Sylvan_Refuge
+#: Survivals_WoL/scenarios/2p_Sylvan_Refuge.cfg:4
+msgid "2p - Sylvan Refuge"
+msgstr ""
+
+#. [multiplayer]: id=2p_Sylvan_Refuge
+#: Survivals_WoL/scenarios/2p_Sylvan_Refuge.cfg:6
+msgid "1v1 Map made by Lord-Knightmare."
+msgstr ""
+
+#. [side]
+#: Survivals_WoL/scenarios/2p_Sylvan_Refuge.cfg:24
+msgid "South"
+msgstr ""
+
+#. [side]
+#: Survivals_WoL/scenarios/2p_Sylvan_Refuge.cfg:33
+msgid "North"
 msgstr ""
 
 #. [multiplayer]: id=multiplayer_6p_Team_Survival_wol
