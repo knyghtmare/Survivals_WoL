@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
+"POT-Creation-Date: 2021-06-28 15:58 UTC\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. [multiplayer]: id=multiplayer_2p_Dark_Forecast_revised
+#: Survivals_WoL/scenarios/2p_Dark_Forecast_Revised.cfg:6
+msgid "2p — Dark Forecast (Survival) - Revised"
+msgstr ""
+
+#. [multiplayer]: id=multiplayer_2p_Dark_Forecast_revised_wol
+#: Survivals_WoL/scenarios/2p_Dark_Forecast_WoL.cfg:6
+msgid "2p — Dark Forecast (WoL)"
+msgstr ""
+
+#. [multiplayer]: id=multiplayer_2p_Isle_of_Mists_WoL
+#: Survivals_WoL/scenarios/2p_Isle_of_Mists_WoL.cfg:10
+msgid "2p — Isle of Mists (WoL)"
+msgstr ""
+
+#. [multiplayer]: id=multiplayer_6p_Team_Survival_wol
+#: Survivals_WoL/scenarios/6p_Team_Surival_WoL.cfg:248
+msgid "6p — Team Survival (WoL)"
+msgstr ""
+
+#. [multiplayer]: id=multiplayer_6p_Team_Survival_revised
+#: Survivals_WoL/scenarios/6p_Team_Survival_Revised.cfg:248
+msgid "6p — Team Survival (Revised)"
+msgstr ""
+
