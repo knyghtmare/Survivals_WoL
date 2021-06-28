@@ -6,20 +6,20 @@ local random_spawns = {
 	{
 		{"Heavy Infantryman", "Shock Trooper", "Iron Mauler", "none"},
 		{"Elvish Fighter", "Elvish Hero", "more", "Elvish Champion"},
-		{"Goblin Spearman", "more", "more", "more"},
-		{"Goblin Spearman", "Goblin Rouser", "none", "none"},
+		{"Bloodborn", "more", "more", "more"},
+		{"Sky Shard", "Sky Crystal", "none", "none"},
 		{"Dune Soldier", "Dune Swordsman", "Dune Blademaster", "Dune Paragon"},
 	},
 	{
-		{"Mage", "Red Mage", "Silver Mage", "none"},
-		{"Footpad", "Outlaw", "more", "none"},
+		{"Aragwaith Adept", "Aragwaith Enchantress", "Aragwaith Sorceress", "none"},
+		{"Footpad", "Outlaw", "Fugitive", "none"},
 		{"Drake Fighter", "Drake Warrior", "Drake Blademaster", "none"},
-		{"Walking Corpse", "more", "more", "more"},
+		{"Bloodborn", "more", "more", "more"},
 	},
 	{
-		{"Merman Hunter", "Merman Spearman", "Merman Entangler", "none"},
+		{"Merman Fighter", "Merman Warrior", "Merman Triton", "none"},
 		{"Naga Dirkfang", "Naga Ophidian", "Naga Sicarius", "none"},
-		{"Spearman", "Pikeman", "none", "Halberdier"},
+		{"Centaur Warden", "Centaur Sentinel", "none", "Centaur Spearmaiden"},
 	},
 	{
 		{"Elvish Shaman", "Elvish Druid", "Elvish Shyde", "Elvish Sylph"},
@@ -27,8 +27,8 @@ local random_spawns = {
 		{"Skeleton", "Revenant", "more", "Draug"},
 	},
 	{
-		{"Rock Scorpion", "Fire Wraith", "none", "none"},
-		{"Fire Ant", "more", "Cave Bear", "more"},
+		{"Ice Ghost", "Wild Wyvern", "none", "none"},
+		{"Rock Scorpion", "more", "Cave Bear", "more"},
 	},
 	{
 		{"Ghoul", "Necrophage", "more", "none"},
@@ -37,14 +37,14 @@ local random_spawns = {
 		{"Drake Clasher", "Drake Thrasher", "more", "Drake Enforcer"},
 	},
 	{
-		{"Skeleton Archer", "Bone Shooter", "more", "Banebow"},
+		{"Thin Blood", "Half Blood", "more", "Twilight Walker"},
 		{"Dune Skirmisher", "Dune Strider", "none", "Dune Harrier"},
 		{"Drake Glider", "Sky Drake", "Hurricane Drake", "none"},
 	},
 	{
 		{"Merman Fighter", "Merman Warrior", "more", "Merman Triton"},
-		{"Dark Adept", "Dark Sorcerer", "Necromancer", "none"},
-		{"Elvish Scout", "Elvish Rider", "more", "none"},
+		{"Quenoth Mystic", "Quenoth Sun Singer", "Quenoth Sun Sylph", "none"},
+		{"Aragwaith Scout", "Aragwaith Lancer", "more", "none"},
 	},
 	{
 		{"Wose", "Elder Wose", "Ancient Wose", "none"},
@@ -52,16 +52,16 @@ local random_spawns = {
 		{"Saurian Skirmisher", "more", "Saurian Ambusher", "more"},
 	},
 	{
-		{"Dune Soldier", "Dune Swordsman", "more", "none"},
-		{"Vampire Bat", "Blood Bat", "more", "none"},
+		{"Fledgeling", "Vampire Noble", "more", "none"},
+		{"Drake Glider", "Sky Drake", "more", "none"},
 		{"Dwarvish Thunderer", "Dwarvish Thunderguard", "none", "none"},
-		{"Giant Ant", "more", "more", "more"},
-		{"Giant Scorpling", "more", "Sergeant", "Orcish Ruler"},
+		{"Bloodborn", "more", "more", "more"},
+		{"Sky Shard", "more", "Weaver", "Heretic"},
 	},
 	{
-		{"Dwarvish Guardsman", "Dwarvish Stalwart", "none", "none"},
+		{"Quenoth Fighter", "Quenoth Warrior", "none", "none"},
 		{"Bowman", "Longbowman", "more", "Master Bowman"},
-		{"Troll Whelp", "Troll", "Troll Warrior", "none"},
+		{"Troll Whelp", "Troll", "Troll Warrior", "Troll Warmonger"},
 	},
 	{
 		{"Orcish Assassin", "Orcish Slayer", "more", "none"},
@@ -69,24 +69,23 @@ local random_spawns = {
 		{"Saurian Augur", "Saurian Soothsayer", "none", "none"},
 	},
 	{
-		{"Wolf Rider", "Goblin Pillager", "more", "none"},
+		{"Wolf Rider", "Goblin Pillager", "Goblin Cutthroat", "none"},
 		{"Ghost", "Shadow", "more", "more"},
-		{"Sergeant", "Lieutenant", "General", "Grand Marshal"},
+		{"Aragwaith Spearman", "Aragwaith Flagbearer", "Aragwaith Captain", "Aragwaith Ancient Banner"},
 	},
 	{
-		{"Gryphon Rider", "none", "more", "none"},
+		{"Aragwaith Eagle Rider", "none", "more", "none"},
 		{"Dune Rover", "Dune Explorer", "more", "Dune Wayfarer"},
 	},
 	{
 		{"Dwarvish Fighter", "Dwarvish Steelclad", "more", "Dwarvish Lord"},
 		{"Poacher", "Trapper", "more", "none"},
-		{"Fire Wraith", "more", "more", "none"},
+		{"Blood Hulk", "more", "more", "none"},
 	},
 	{
-		{"Horned Scarab", "more", "more", "more"},
-		{"Dwarvish Ulfserker", "Dwarvish Berserker", "more", "none"},
-		{"Mage", "White Mage", "Mage of Light", "none"},
-		{"Orcish Grunt", "Orcish Warrior", "more", "none"},
+		{"Sky Shard", "more", "more", "more"},
+		{"Adept of Light", "White Mage", "Mage of Light", "none"},
+		{"Gatekeeper", "Oathkeeper", "more", "Lorekeeper"},
 	},
 }
 
@@ -358,11 +357,11 @@ on_event("prestart", function()
 		return res
 	end
 	wml.array_access.set("fixed_spawn", {
-		fixed_spawn(27, 3, "Armageddon Drake", "Wild Wyvern", "Grand Knight"),
-		fixed_spawn(8, 14, "Dune Paragon", "Dune Luminary", "Fire Drake"),
-		fixed_spawn(4, 9, "Necromancer", "Dune Soldier", "Dune Rover", "Dune Rover", "Dune Falconer", "Dune Captain", "Dune Rover", "Dune Soldier"),
-		fixed_spawn(28,11, "Elvish Champion", "Dune Spearguard", "Dwarvish Stalwart", "Necrophage"),
-		fixed_spawn(5, 3, "Dwarvish Arcanister", "Mage of Light", "Drake Warrior", "Arch Mage"),
+		fixed_spawn(27, 3, "Wyrm", "Wild Wyvern", "Elder Gryphon"),
+		fixed_spawn(8, 14, "Dune Paragon", "Dune Luminary", "Aragwaith Strongbow"),
+		fixed_spawn(4, 9, "Sangel", "Bloodborn", "Gargoyle", "Bloodborn", "Malborn", "Malborn", "Bloodborn", "Bloodborn", "Bloodborn"),
+		fixed_spawn(28,11, "Warmonger", "Dune Spearguard", "Aragwaith Guard", "Necrophage"),
+		fixed_spawn(5, 3, "Dwarvish Arcanister", "Spectre", "Shadowback", "Arbiter"),
 	})
 end)
 
