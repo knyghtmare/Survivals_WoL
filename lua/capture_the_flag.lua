@@ -1,5 +1,6 @@
 local _ = wesnoth.textdomain "wesnoth-Survivals_WoL"
 local old_unit_status = wesnoth.interface.game_display.unit_status
+wml_actions = wesnoth.wml_actions
 
 function wesnoth.interface.game_display.unit_status()
 	local u = wesnoth.interface.get_displayed_unit()
