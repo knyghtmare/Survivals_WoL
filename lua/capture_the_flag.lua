@@ -14,3 +14,33 @@ function wesnoth.interface.game_display.unit_status()
 
 	return s
 end
+
+-- define 2 customised tags for this scenario
+-- to register capture and release
+
+function wml_actions.capture_flag(cfg)
+	for index, unit in ipairs(wesnoth.units.find_on_map(cfg)) do
+		if unit.valid and not unit.status.flag_carrier then
+			unit.status.flag_carrier = true
+			if unit.__cfg.gender == "female" then
+				wesnoth.interface.float_label(unit.x, unit.y, string.format("<span color='red'>%s</span>", tostring( _"female^captured flag" ) ) )
+			else
+				wesnoth.interface.float_label(unit.x, unit.y, string.format("<span color='red'>%s</span>", tostring( _"captured flag" ) ) )
+			end
+		end
+	end
+end
+
+function wml_actions.release_flag(cfg)
+	-- removes flag_carrier from all units matching the filter.
+	for index, unit in ipairs(wesnoth.units.find_on_map(cfg)) do
+		if unit.valid and unit.status.flag_carrier then
+			unit.status.flag_carrier = nil
+			if unit.__cfg.gender == "female" then
+				wesnoth.interface.float_label(unit.x, unit.y, string.format("<span color='red'>%s</span>", tostring( _"female^released flag" ) ) )
+			else
+				wesnoth.interface.float_label(unit.x, unit.y, string.format("<span color='red'>%s</span>", tostring( _"released flag" ) ) )
+			end
+		end
+	end
+end
