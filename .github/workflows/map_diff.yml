@@ -1,7 +1,9 @@
 name: Map Diff
 
 on:
-  push_target:
+  push:
+    branches:
+      - main
     paths:
     - '**.map'
 
