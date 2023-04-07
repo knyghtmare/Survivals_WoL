@@ -1,5 +1,9 @@
 changelog:
 
+v1.0.4
+--> Disabled/Retired some scenarios
+--> you unappreciative fucks didn't like it so they are retired.
+
 v1.0.0
 --> initial release
 
