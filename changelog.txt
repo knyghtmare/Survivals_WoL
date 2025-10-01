@@ -1,5 +1,8 @@
 changelog:
 
+v1.0.6
+--> Add Early Winter (survival scenario) by Hejnewar
+
 v1.0.4
 --> Disabled/Retired some scenarios
 --> you unappreciative fucks didn't like it so they are retired.
