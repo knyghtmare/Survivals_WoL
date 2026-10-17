@@ -1,5 +1,8 @@
 changelog:
 
+v1.0.8
+--> Added Altar of Q'zrk (4p), Temples of the Nagas (4p) and Island Survival (3p) scenarios
+
 v1.0.6
 --> Add Early Winter (survival scenario) by Hejnewar
 
