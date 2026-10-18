@@ -2,6 +2,7 @@ changelog:
 
 v1.0.9
 --> Added Murky Weathercast (2p and 3p) survival scenarios
+--> Added Afterlife survival scenarios (2p, 2p race and 4p beta)
 
 v1.0.8
 --> Added Altar of Q'zrk (4p), Temples of the Nagas (4p) and Island Survival (3p) scenarios
