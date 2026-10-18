@@ -9,7 +9,7 @@ local string = string
 local table = table
 local gsub = string.gsub
 local wml = wml
-local on_event = wesnoth.require("lua/on_event.lua")
+local on_event = wesnoth.require("on_event")
 local T = wml.tag
 
 ---@param key string
