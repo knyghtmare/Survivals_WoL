@@ -345,8 +345,9 @@ function afterlife.init_defense()
 		local wave_length = afterlife.get_variable("afterlife_wave_length") or 2
 		if (wesnoth.current.turn - 1) % wave_length == 0 then
 			if wesnoth.current.side == 1 then
-				copy_units(teams[1].humans[wesnoth.current.turn % #teams[1].humans + 1], teams[1].ai)
-				copy_units(teams[2].humans[wesnoth.current.turn % #teams[2].humans + 1], teams[2].ai)
+				local wave_index = math.floor((wesnoth.current.turn - 1) / wave_length)
+				copy_units(teams[1].humans[wave_index % #teams[1].humans + 1], teams[1].ai)
+				copy_units(teams[2].humans[wave_index % #teams[2].humans + 1], teams[2].ai)
 			end
 			if wesnoth.sides[wesnoth.current.side].__cfg.allow_player == false then
 				afterlife.unpetrify_units()
