@@ -1,6 +1,6 @@
 changelog:
 
-v1.0.9
+v1.0.10
 --> Added Murky Weathercast (2p and 3p) survival scenarios
 --> Added Afterlife survival scenarios (2p, 2p race and 4p beta)
 
